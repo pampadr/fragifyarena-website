@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo" id="header-logo">App Name</a>
+      <button class="nav-toggle" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page">
+      <h1>Contact Us</h1>
+      <p class="meta">We'd love to hear from you. Send us a message and we'll get back to you as soon as possible.</p>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="contact-name">Your Name</label>
+          <input type="text" id="contact-name" name="name" required placeholder="John Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Your Email</label>
+          <input type="email" id="contact-email" name="email" required placeholder="john@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <select id="contact-subject" name="subject">
+            <option value="general">General Inquiry</option>
+            <option value="bug">Bug Report</option>
+            <option value="feature">Feature Request</option>
+            <option value="privacy">Privacy Concern</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" required placeholder="Tell us what's on your mind..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="form-success" id="form-success">
+        <p><strong>Thank you!</strong></p>
+        <p>Your message has been sent. We'll get back to you soon.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p id="footer-text"></p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

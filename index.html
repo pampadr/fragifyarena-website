@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo" id="header-logo">App Name</a>
+      <button class="nav-toggle" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 id="hero-title">Welcome</h1>
+      <p id="hero-subtitle">Support and legal information for our app.</p>
+
+      <div class="card-grid">
+        <a href="privacy-policy.html" class="card">
+          <h3>Privacy Policy</h3>
+          <p>Learn how we handle your data and protect your privacy.</p>
+        </a>
+        <a href="terms-of-service.html" class="card">
+          <h3>Terms of Service</h3>
+          <p>Review the terms and conditions for using our app.</p>
+        </a>
+        <a href="contact.html" class="card">
+          <h3>Contact Us</h3>
+          <p>Have questions or feedback? Get in touch with our team.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p id="footer-text"></p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
