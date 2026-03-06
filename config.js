@@ -4,31 +4,30 @@
 
 const CONFIG = {
   // App & Developer
-  appName: "Your App Name",
-  developerName: "Your Company / Developer Name",
-  developerWebsite: "https://yourwebsite.com",
+  appName: "Fragify Arena",
+  developerName: "Elena Zukauskas",
+  developerWebsite: "https://fragifyarena.space",
 
   // Contact Information
-  contactEmail: "support@yourapp.com",
+  contactEmail: "beaverspam5843@aol.com",
   contactSubject: "Support Request",
 
   // Policy Details
-  effectiveDate: "February 9, 2026",
-  jurisdiction: "United States",
+  effectiveDate: "March 6, 2026",
+  jurisdiction: "Poland",
 
   // App Store
-  appStoreUrl: "#",
+  appStoreUrl: "https://apps.apple.com/app/id6760196513",
 
   // Data & Privacy (set to true/false based on your app)
-  collectsAnalytics: true,
-  collectsDeviceInfo: true,
-  collectsCrashReports: true,
+  collectsAnalytics: false,
+  collectsDeviceInfo: false,
+  collectsCrashReports: false,
   usesThirdPartyServices: false,
-  thirdPartyServices: [], // e.g. ["Google Analytics", "Firebase"]
+  thirdPartyServices: [],
 
   // Appearance
-  // Switch between "warm" and "cool" — or set to "custom" to use your own colors below
-  theme: "warm", // "warm" | "cool" | "custom"
+  theme: "cool",
 
   // Custom colors (only used when theme is "custom")
   customColors: {
